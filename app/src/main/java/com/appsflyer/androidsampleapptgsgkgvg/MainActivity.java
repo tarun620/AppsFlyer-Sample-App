@@ -1,4 +1,4 @@
-package com.appsflyer.androidsampleapp;
+package com.appsflyer.androidsampleapptgsgkgvg;
 
 import android.os.Bundle;
 import android.os.Handler;

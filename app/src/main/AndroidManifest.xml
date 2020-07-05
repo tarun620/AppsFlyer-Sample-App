@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.appsflyer.androidsampleapp">
+    package="com.appsflyer.androidsampleapptgsgkgvg">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <!-- Optional : -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Optional : -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
@@ -16,6 +15,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".orangeActivity"></activity>
+        <activity android:name=".bananaActivity" />
+        <activity android:name=".appleActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,15 +38,26 @@
         </receiver>
 
         <activity android:name=".DeepLink">
-            <intent-filter  android:autoVerify="true">
+
+            <!-- <intent-filter  android:autoVerify="true"> -->
+            <!-- <action android:name="android.intent.action.VIEW" /> -->
+            <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+            <!-- <category android:name="android.intent.category.BROWSABLE" /> -->
+            <!-- <data android:scheme="https" -->
+            <!-- android:host="androidsampleapp.onelink.me" -->
+            <!-- android:pathPrefix="/Pvqj" /> -->
+            <!-- </intent-filter> -->
+            <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="https"
-                    android:host="androidsampleapp.onelink.me"
-                    android:pathPrefix="/Pvqj" />
-            </intent-filter>
 
+                <data
+                    android:host="androidsampleapptgsgkgvg.onelink.me"
+                    android:pathPrefix="/bhp5"
+                    android:scheme="https" />
+            </intent-filter>
         </activity>
     </application>
 

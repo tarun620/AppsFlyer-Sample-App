@@ -1,4 +1,4 @@
-package com.appsflyer.androidsampleapp;
+package com.appsflyer.androidsampleapptgsgkgvg;
 
 import android.app.Application;
 import android.util.Log;
@@ -19,8 +19,10 @@ import java.util.Map;
 
 public class AFApplication extends Application {
 
+//    YP5GvsSWVT9XKm5DxHn7X9
+//    YP5GvsSWVT9XKm5DxHn7X9
 
-    private static final String AF_DEV_KEY = "AF_DEV_KEY";
+    private static final String AF_DEV_KEY = "YP5GvsSWVT9XKm5DxHn7X9";
 
 
     @Override
